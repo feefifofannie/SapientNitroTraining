@@ -56,6 +56,17 @@ public class PerfectNumbersTest {
 	}
 	
 	@Test
+	public final void testRandom() {
+		int one = 5;
+		int two = 5;
+		PerfectNumbers ranOne = new PerfectNumbers(28);
+		PerfectNumbers ranTwo = new PerfectNumbers(28);
+		assertEquals(ranOne.findDivisors(), ranTwo.findDivisors());
+		//for objects, equals and same both look at reference
+		//for collections, equals looks at value while same looks at reference
+	}
+	
+	@Test
 	public final void testFive() {
 		assertFalse(five.isPerfectNumber());
 	}
