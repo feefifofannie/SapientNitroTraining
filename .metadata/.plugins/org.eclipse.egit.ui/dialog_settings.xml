@@ -9,6 +9,7 @@
 	<item value="98" key="DIALOG_Y_ORIGIN"/>
 	<list key="RepositorySelectionPage.UsedUris">
 		<item value="https://github.com/feefifofannie/TransactionProject.git"/>
+		<item value="https://github.com/feefifofannie/SapientNitroTraining.git"/>
 		<item value="https://github.com/AlexMcG/StoreProject.git"/>
 	</list>
 	<list key="CommitDialog.authorValues">
@@ -25,6 +26,10 @@
 		<item value="457" key="DIALOG_HEIGHT"/>
 		<item value="364" key="DIALOG_X_ORIGIN"/>
 		<item value="154" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item value="543" key="DIALOG_X_ORIGIN"/>
+		<item value="332" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
 		<item value="642" key="DIALOG_WIDTH"/>
