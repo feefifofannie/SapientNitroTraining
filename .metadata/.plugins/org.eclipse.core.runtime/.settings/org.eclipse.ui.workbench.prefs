@@ -1,2 +1,10 @@
+//org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.egit.ui.GitTheme\tTorg.eclipse.jdt.ui.presentation\tTorg.eclipse.wst.sse.ui\tTorg.eclipse.compare.contentmergeviewer.TextMergeViewer\tTorg.eclipse.ui.presentation.default
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jdt.ui.javadocfont
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
+org.eclipse.egit.ui.DiffAddForegroundColor=7,248,223
+org.eclipse.egit.ui.DiffHeadlineForegroundColor=7,248,223
+org.eclipse.egit.ui.DiffRemoveForegroundColor=7,248,223
+org.eclipse.egit.ui.IgnoredResourceForegroundColor=7,248,223
+org.eclipse.egit.ui.UncommittedChangeForegroundColor=7,248,223

@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+function access(func){
+	func();
+}
+
+var employee = {
+	firstName: 'Arafath',
+	lastName: 'Aboobacker',
+	netSalary:function(){
+		alert('Total Salary');
+	}
+};
+
+var btnClickRef = document.getElementById('btnClick');
+
+var eventHandler = function() {
+	employee.firstName = 'Anil';
+	alert(employee.firstName);
+	employee.netSalary();
+};
+
+function Name() {
+	firstName = "Allen";
+	lastName = "John";
+	fullName = function() {
+		return firstName+' '+lastName;
+	};
+}
+
+name = new Name;
+alert(name.lastName);

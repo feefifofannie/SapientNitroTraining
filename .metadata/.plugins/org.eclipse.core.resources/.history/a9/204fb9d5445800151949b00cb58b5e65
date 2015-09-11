@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+function access(func){
+	func();
+}
+
+var employee = {
+	firstName: 'Arafath',
+	lastName: 'Aboobacker',
+	netSalary:function(){
+		setInterval(function(){ alert("Hello"); }, 3000);
+	}
+};
+employee.netSalary();
+var btnClickRef = document.getElementById('btnClick');
+
+var eventHandler = function() {
+	employee.firstName = 'Anil';
+	alert(employee.firstName);
+	employee.netSalary();
+};
+
+function Name(first, last) {
+	firstName = first;
+	lastName = last;
+	fullName = function() {
+		return firstName+' '+lastName;
+	};
+}
+
+name = new Name("Elizabeth", "Myers");
+alert(name.fullName());

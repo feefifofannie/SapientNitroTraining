@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+
+p{
+	color:#FF0000;
+	font-size:24px
+}
+
+table{
+	color: orange;
+}
+
+#p1{
+	font-size: 18px
+}
+
+.loginpagetextcolor{
+	font-size: 24px
+}
