@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+	<div id="div1">
+		<p>Enter a number and click OK:</p>
+
+		<input id="id1" type="number" min="100" max="300">
+		<button id="coloredbtn" onclick="myFunction()">OK</button>
+
+		<p>If the number is less than 100 or greater than 300, an error
+			message will be displayed.</p>
+
+		<p id="demo"></p>
+	</div>
+	<script src="code.js"></script>
+	<script>
+		//dom example
+		var para = document.createElement("p");
+		var node = document.createTextNode("THis is new");
+		para.appendChild(node);
+		var element = document.getElementById("div1");
+		element.appendChild(para);
+
+		function myFunction() {
+			var inpObj = document.getElementById("id1");
+			if (inpObj.checkValidity() == false) {
+				document.getElementById("demo").innerHTML = inpObj.validationMessage;
+			} else {
+				document.getElementById("demo").innerHTML = "Input OK";
+			}
+		}
+	</script>
+
+</body>
+</html>
