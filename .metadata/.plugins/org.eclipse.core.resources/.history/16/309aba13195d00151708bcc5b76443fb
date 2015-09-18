@@ -1,0 +1,51 @@
+package com.sapient.view;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class GreetingServlet
+ */
+public class GreetingServlet extends HttpServlet {
+	HttpServletRequest request;
+	HttpServletResponse response;
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public GreetingServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		this.request=request;
+		this.response=response;
+		String firstname = request.getParameter("firstname");
+		String password = request.getParameter("password");
+		response.getWriter().println("<div style =\"color:orange\">Hello "+firstname+"</div");
+		response.getWriter().println("<div style =\"color:orange\">"+password+"</div");
+	}
+	
+	private void checkColor() throws IOException{
+		String color = request.getParameter("color");
+		if (color != null && color != ""){
+			response.getWriter().println("<div style =\"color:orange\">That's my favorite color"+""+"</div");
+		}
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}

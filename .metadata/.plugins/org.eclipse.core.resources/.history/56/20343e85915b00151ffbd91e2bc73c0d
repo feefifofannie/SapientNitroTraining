@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Blackhawks Portal</title>
+</head>
+<body>
+	<script type="text/javascript">
+    	function validateForm(){
+    		var a=document.form.username.value;
+    		var b=document.form.password.value;
+    		if (a==null || a=="",b==null || b==""){
+      			alert("Please Fill All Required Fields");
+      			return false;
+      		}
+    	}
+    </script>
+    
+      <h1>Login to Blackhawks Portal</h1>
+      <form method="post" name="form" onsubmit="return validateForm()" action="index.html">
+        <p><input type="text" id="username" name="username" value="" placeholder="Username or Email"></p>
+        <p><input type="password" id="password" name="password" value="" placeholder="Password"></p>
+        <p><input type="submit" name="commit" value="Login" ></p>
+      </form>
+
+      <p>Forgot your password? <a href="passwordreset.html">Click here to reset it</a></p>
+      <p>Not a registered user? <a href="signup.html">Sign up!</a></p>
+
+
+</body>
+</html>

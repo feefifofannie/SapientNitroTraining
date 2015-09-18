@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: right;
+}
+
+li:first-child { float:left; }
+
+a:link,a:visited {
+	display: block;
+	width: 120px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover,a:active {
+	background-color: #ffb66c;
+}
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="index.html">Sapient</a></li>
+		<li><a href="#about">Log Out</a></li>
+		<li><a href="Blogs.html">Blogs</a></li>
+		<li><a href="contacts.html">Contacts</a></li>
+		<li><a href="Result.html">Results</a></li>
+		<li><a href="schedule.html">Schedule</a></li>
+		<li><a href="profile.html">Profile</a></li>
+	</ul>
+	<script src="http://code.jquery.com/jquery.js"></script>
+</body>
+</html>

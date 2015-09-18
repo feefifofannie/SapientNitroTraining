@@ -8,8 +8,8 @@
 	<item value="420" key="DIALOG_X_ORIGIN"/>
 	<item value="98" key="DIALOG_Y_ORIGIN"/>
 	<list key="RepositorySelectionPage.UsedUris">
-		<item value="https://github.com/feefifofannie/TransactionProject.git"/>
 		<item value="https://github.com/feefifofannie/SapientNitroTraining.git"/>
+		<item value="https://github.com/feefifofannie/TransactionProject.git"/>
 		<item value="https://github.com/AlexMcG/StoreProject.git"/>
 	</list>
 	<list key="CommitDialog.authorValues">

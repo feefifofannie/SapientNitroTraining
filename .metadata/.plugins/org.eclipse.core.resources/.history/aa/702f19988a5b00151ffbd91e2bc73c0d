@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+
+p{
+	color:#FF0000;
+	font-size:24px
+}
+
+table{
+	color: orange;
+}
+
+#p1{
+	font-size: 18px
+}
+
+.loginpagetextcolor{
+	font-size: 24px
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: right;
+}
+
+li:first-child { float:left; }
+
+a:link,a:visited {
+	display: block;
+	width: 120px;
+	font-weight: bold;
+	color: orange;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover,a:active {
+	color: white;
+	background-color: #ffb66c;
+}

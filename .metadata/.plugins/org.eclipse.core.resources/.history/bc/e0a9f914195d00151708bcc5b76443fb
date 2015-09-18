@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AJAX Demo</title>
+<script>
+	function ajaxFunction() {
+		var xmlHttp;
+		try {
+			xmlHttp = new XMLHttpRequest();
+		} catch (e) {
+			try {
+				xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e) {
+				try {
+					xmlHttp = new ActiveObejct("Microsoft.XMLHTTP");
+				} catch (e) {
+					alert("Your browser does not support AJAX!");
+					return false;
+				}
+			}
+		}
+		xmlHttp.onreadystatechange = function() {
+			if (xmlHttp.readyState == 4) {
+				document.getElementById("divHello").innerHTML = xmlHttp.responseText;
+			}
+		}
+		xmlHttp.open("GET", "greet?firstname=" + document.regfrm.fname.value,true);
+		xmlHttp.open("GET", "greet?password=" + document.regfrm.psw.value,true);
+		
+		xmlHttp.send(null);
+	}
+</script>
+</head>
+<body>
+	<form name="regfrm">
+		<input id="fname" placeholder="First Name" type=text onblur="ajaxFunction()"/>
+		<br>
+		<input type="password" id="psw" placeholder="Password" onblur="ajaxFunction()"/>
+		<br>
+		<input type="radio" id="sex" value="female" checked> Female </input>
+		<br>
+		<input type="checkbox" id="check" value="Bike" onblur="ajaxFunction()"> I would like to recieve emails.</input>
+		<br>
+		<input type="date" id="bday" placeholder="Birthday"/>
+		<br>
+		<input type="color" id="favcolor" onblur="ajaxFunction()"/>
+		<br>
+	</form>
+</body>
+</html>

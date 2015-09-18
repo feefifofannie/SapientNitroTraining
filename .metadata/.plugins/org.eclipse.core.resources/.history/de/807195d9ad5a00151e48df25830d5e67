@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div data-ng-app="">
+ 
+<p>Input something in the input box:</p>
+<p>Name: <input type="text" data-ng-model="name"></p>
+<p data-ng-bind="name"></p>
+
+</div>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</body>
+</html>

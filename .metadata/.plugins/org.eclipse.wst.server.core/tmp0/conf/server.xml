@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="D:\workspace\SapientNitroTraining\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\workspace\SapientNitroTraining\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebProject" path="/WebProject" reloadable="true" source="org.eclipse.jst.jee.server:WebProject"/></Host>
+      <Context docBase="D:\workspace\SapientNitroTraining\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\workspace\SapientNitroTraining\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebProject" path="/WebProject" reloadable="true" source="org.eclipse.jst.jee.server:WebProject"/><Context docBase="D:\workspace\SapientNitroTraining\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SessionManagementDemo" path="/SessionManagementDemo" reloadable="true" source="org.eclipse.jst.jee.server:SessionManagementDemo"/><Context docBase="D:\workspace\SapientNitroTraining\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Filters" path="/Filters" reloadable="true" source="org.eclipse.jst.jee.server:Filters"/></Host>
     </Engine>
   </Service>
 </Server>

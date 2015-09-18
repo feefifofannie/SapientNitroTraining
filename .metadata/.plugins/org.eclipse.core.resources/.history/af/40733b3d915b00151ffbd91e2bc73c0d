@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+</head>
+<body>
+	<script type="text/javascript">
+    	function validateForm(){
+    		var a=document.form.username.value;
+    		var b=document.form.password.value;
+    		var c=document.form.name.value;
+    		var d=document.form.email.value;
+    		var e=document.form.cpassword.value;
+    		if (a==null || a=="",b==null || b=="",c==null || c=="",d==null || d=="",e==null || e==""){
+      			alert("Please Fill All Required Fields");
+      			return false;
+      		}
+    	}
+    </script>
+    
+	<h1>Sign Up</h1>
+      <form method="post" name="form" onsubmit="return validateForm()" action="signupconfirm.html">
+        <p><input type="text" id="name" value="" placeholder="Name"></p>
+        <p><input type="text" id="email" value="" placeholder="Email"></p>
+        <p><input type="text" id="username" value="" placeholder="Username"></p>
+        <p><input type="password" id="password" value="" placeholder="Password"></p>
+        <p><input type="password" id="cpassword" value="" placeholder="Confirm Password"></p>
+        <p><input type="submit" name="commit" value="Sign Up" ></p>
+      </form>
+
+      <p>Already a user? <a href="login.html">Log in</a>.</p>
+</body>
+</html>

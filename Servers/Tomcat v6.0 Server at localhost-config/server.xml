@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="WebProject" path="/WebProject" reloadable="true" source="org.eclipse.jst.jee.server:WebProject"/></Host>
+      <Context docBase="WebProject" path="/WebProject" reloadable="true" source="org.eclipse.jst.jee.server:WebProject"/><Context docBase="SessionManagementDemo" path="/SessionManagementDemo" reloadable="true" source="org.eclipse.jst.jee.server:SessionManagementDemo"/><Context docBase="Filters" path="/Filters" reloadable="true" source="org.eclipse.jst.jee.server:Filters"/></Host>
     </Engine>
   </Service>
 </Server>

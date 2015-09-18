@@ -1,0 +1,5 @@
+package com.sapient.xml;
+
+public class ShipOrder {
+
+}

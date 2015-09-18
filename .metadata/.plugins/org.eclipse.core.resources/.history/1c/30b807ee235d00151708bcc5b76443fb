@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contacts</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<ul>
+		<li><a href="index.html">Sapient</a></li>
+		<li><a href="logout.html">Log Out</a></li>
+		<li><a href="Blogs.html">Blogs</a></li>
+		<li><a href="contacts.html">Contacts</a></li>
+		<li><a href="Result.html">Results</a></li>
+		<li><a href="schedule.html">Schedule</a></li>
+		<li><a href="profile.html">Profile</a></li>
+	</ul>
+	<script src="http://code.jquery.com/jquery.js"></script>
+Here are your contacts:
+Duncan Keith
+Marian Hossa
+Corey Crawford
+
+</body>
+</html>

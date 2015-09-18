@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.sapient.controller.SecondServlet&apos; to &apos;SecondFilter&apos;&#x0D;&#x0A;- Original project: &apos;Filters&apos;&#x0D;&#x0A;- Original element: &apos;com.sapient.controller.SecondServlet&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sapient.controller.SecondFilter&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SecondServlet&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.sapient.controller{SecondServlet.java[SecondServlet" matchStrategy="1" name="SecondFilter" qualified="false" references="true" similarDeclarations="false" stamp="1442570619900" textual="false" version="1.0"/>
+</session>

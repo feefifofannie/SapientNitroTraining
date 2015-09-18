@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Schedule</title>
+<style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: right;
+}
+
+li:first-child { float:left; }
+
+a:link,a:visited {
+	display: block;
+	width: 120px;
+	font-weight: bold;
+	color: orange;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover,a:active {
+	color: white;
+	background-color: #ffb66c;
+}
+</style>
+</head>
+<body>
+<p>
+Check out the 2015 Schedule:
+WED OCT 7, 2015	RANGERS	BLACKHAWKS 7:00 PM 
+FRI OCT 9, 2015	BLACKHAWKS	ISLANDERS 6:30 PM
+SAT OCT 10, 2015	ISLANDERS	BLACKHAWKS 7:30 PM
+WED OCT 14, 2015	BLACKHAWKS	FLYERS 7:00 PM
+</p>
+</body>
+</html>
