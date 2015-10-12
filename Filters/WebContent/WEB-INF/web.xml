@@ -55,7 +55,6 @@
   <filter-mapping>
     <filter-name>ThirdFilter</filter-name>
     <url-pattern>/first</url-pattern>
-    <dispatcher>INCLUDE</dispatcher>
   </filter-mapping>
   <filter-mapping>
     <filter-name>ThirdFilter</filter-name>

@@ -1,0 +1,5 @@
+package com.sapient.models;
+
+public class Social extends String {
+
+}

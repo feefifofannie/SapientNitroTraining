@@ -1,0 +1,44 @@
+import java.awt.List;
+import java.util.Iterator;
+
+import org.hibernate.Criteria;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+
+public class MainApp {
+
+	public static void main(String[] args){
+		Session session = factory.openSession();
+		Transaction tx = null;
+		Integer employeeID = null;
+
+		try{
+			tx = session.beginTransaction();
+			/*Criteria criteria = session.createCriteria(Contact.class);
+			List contacts = (List) criteria.list();
+
+			for (Iterator iterator = ((java.util.List) contacts).iterator(); iterator.hasNext();){
+				Contact contact = (Contact) iterator.next();
+				System.out.println("ID: " + contact.getID());
+				System.out.println("Name: " + contact.getEmail());
+			}*/
+			
+			String SQL_QUERY = "select contact.id, contact.firstName from Contact contact";
+			Query query = session.createQuery(SQL_QUERY);
+			for (Iterator it = query.iterate(); it.hasNext();){
+				Object[] row = (Object[]) it.next();
+				System.out.println("ID: " + row[0]);
+				System.out.println("Name: " + row[1]);
+			}
+
+		} catch (HibernateException e){
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+	}
+
+}

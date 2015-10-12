@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Oct 07 16:29:40 IST 2015
+org.eclipse.jst.jee.server\:/binary\:D\:\\workspace\\SapientNitroTraining\\SpringMVC\\WebContent\\WEB-INF\\lib\\spring-web-4.0.5.RELEASE.jar=WEB-INF/lib/spring-web-4.0.5.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\workspace\\SapientNitroTraining\\SpringValidation\\WebContent\\WEB-INF\\lib\\spring-web-4.0.5.RELEASE.jar=WEB-INF/lib/spring-web-4.0.5.RELEASE.jar

@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="<%= response.encodeURL("transact?action=inb") %>">Inbox</a>
+<!--  <a href="transact">Inbox</a> -->
+<a href="<%=response.encodeURL("transact?action=inb")%>">Inbox</a>
 </body>
 </html>

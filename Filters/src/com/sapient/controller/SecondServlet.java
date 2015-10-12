@@ -25,6 +25,7 @@ public class SecondServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().println("Inside second servlet");
+		//request.getRequestDispatcher("/first").forward(request, response);
 	}
 
 	/**

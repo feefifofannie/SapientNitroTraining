@@ -29,18 +29,19 @@ public class TransactionServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
 		HttpSession session = request.getSession(false);
-		
 
 		if (session != null){
 			if (action != null && action.equals("inb")){
 				Cookie[] cookies = request.getCookies();
 				for (Cookie cookie:cookies) {
-					if (cookie.getName().equals("Danielle")) {
+					if (cookie.getName().equals("Danielle")){
 						request.getRequestDispatcher("inbox.jsp").forward(request, response);
+						return;
 					} else {
 						response.sendRedirect("index.html");
 					}
 				}
+				
 			} else {
 				response.sendRedirect("index.html");
 			}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+ 	http://www.springframework.org/schema/beans
+ 	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+ 	http://www.springframework.org/schema/context
+ 	http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+	
+	<context:annotation-config/>
+	<context:component-scan base-package="com.sapient.beans"/>
+	
+	<bean id="authBean" class="com.sapient.beans.security.BasicAuthentication" scope="prototype" lazy-init="false">
+		<property name="maxAttempts" value="10"></property>
+	</bean>
+
+	<bean id="guiAuthBean" class="com.sapient.beans.security.GUIAuthentication" parent="authBean">
+	</bean>
+	
+	<bean id="empBean" class="com.sapient.beans.Employee">
+		<constructor-arg value="Kaushal" index="1" type="String"/>
+		<constructor-arg value="1" index="0" type="int"/>
+		<property name="address">
+			<map>
+				<entry key="Building" value="Infospace"/>
+				<entry key="City" value="Gurgaon"/>
+				<entry key="State" value="Haryana"/>
+				<entry key="Country" value="India"/>
+			</map>
+		</property>
+	</bean>
+	
+	<!-- <bean id="parentBean" class="com.sapient.beans.Parent">
+		<property name="child" ref="childBean"/>
+	</bean> -->
+	
+	<bean id="child" class="com.sapient.beans.Child" p:name="Vikrant"/>
+</beans>

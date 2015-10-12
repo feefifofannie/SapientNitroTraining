@@ -1,0 +1,81 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import org.hibernate.Criteria;
+import org.hibernate.HibernateException;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.sapient.models.Social;
+
+
+public class MainApp {
+
+	public static void main(String[] args){
+		SessionFactory factory;
+		factory = new Configuration().configure().buildSessionFactory();
+		Session session = factory.openSession();
+		Transaction tx = null;
+		Integer employeeID = null;
+		ArrayList<Social> socialAccounts = new ArrayList<Social>();
+
+		try{
+			tx = session.beginTransaction();
+			/*Criteria criteria = session.createCriteria(Contact.class);
+			List contacts = (List) criteria.list();
+
+			for (Iterator iterator = ((java.util.List) contacts).iterator(); iterator.hasNext();){
+				Contact contact = (Contact) iterator.next();
+				System.out.println("ID: " + contact.getID());
+				System.out.println("Name: " + contact.getEmail());
+			}*/
+			
+			/*String SQL_QUERY = "select contact.id, contact.firstName from Contact contact";
+			Query query = session.createQuery(SQL_QUERY);
+			for (Iterator it = query.iterate(); it.hasNext();){
+				Object[] row = (Object[]) it.next();
+				System.out.println("ID: " + row[0]);
+				System.out.println("Name: " + row[1]);
+			}*/
+			
+			socialAccounts.add(new Social("arafathfb"));
+			socialAccounts.add(new Social("arafathg+"));
+			socialAccounts.add(new Social("arafath_"));
+			
+			Contact contact = new Contact();
+			contact.setFirstName("Arafath");
+			contact.setLastName("Aboobacker");
+			contact.setEmail("arafathaboobacker@gmail.com");
+			contact.setAccounts(socialAccounts);
+			
+			Long id = (Long) session.save(contact);
+			System.out.println(id);
+			tx.commit();
+			
+			List contacts = session.createQuery("FROM Contact").list();
+			for (Iterator it = contacts.iterator(); it.hasNext();) {
+				contact = (Contact) it.next();
+				System.out.println("First Name: "+contact.getFirstName());
+				System.out.println("Last Name: "+contact.getLastName());
+				
+				socialAccounts = (ArrayList<Social>) contact.getAccounts();
+				if (socialAccounts != null){
+					for (Iterator it2 = socialAccounts.iterator(); it2.hasNext();){
+						
+					}
+				}
+			}
+			
+
+		} catch (HibernateException e){
+			e.printStackTrace();
+		} finally {
+			session.close();
+		}
+	}
+
+}

@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="WebProject" path="/WebProject" reloadable="true" source="org.eclipse.jst.jee.server:WebProject"/><Context docBase="SessionManagementDemo" path="/SessionManagementDemo" reloadable="true" source="org.eclipse.jst.jee.server:SessionManagementDemo"/><Context docBase="Filters" path="/Filters" reloadable="true" source="org.eclipse.jst.jee.server:Filters"/></Host>
+      <Context docBase="WebProject" path="/WebProject" reloadable="true" source="org.eclipse.jst.jee.server:WebProject"/><Context docBase="SessionManagementDemo" path="/SessionManagementDemo" reloadable="true" source="org.eclipse.jst.jee.server:SessionManagementDemo"/><Context docBase="Filters" path="/Filters" reloadable="true" source="org.eclipse.jst.jee.server:Filters"/><Context docBase="JSP" path="/JSP" reloadable="true" source="org.eclipse.jst.jee.server:JSP"/><Context docBase="RESTful" path="/RESTful" reloadable="true" source="org.eclipse.jst.jee.server:RESTful"/><Context docBase="SpringMVC" path="/SpringMVC" reloadable="true" source="org.eclipse.jst.jee.server:SpringMVC"/><Context docBase="SpringValidation" path="/SpringValidation" reloadable="true" source="org.eclipse.jst.jee.server:SpringValidation"/></Host>
     </Engine>
   </Service>
 </Server>

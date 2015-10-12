@@ -29,4 +29,19 @@
     <servlet-name>ProcessRequestServlet</servlet-name>
     <url-pattern>/process</url-pattern>
   </servlet-mapping>
+  <jsp-config>
+  	<jsp-property-group>
+  		<url-pattern>/welcome</url-pattern>
+  		<scripting-invalid>false</scripting-invalid>
+  	</jsp-property-group>
+  	<jsp-property-group>
+  		<url-pattern>/welcome</url-pattern>
+  		<el-ignored>false</el-ignored>
+  	</jsp-property-group>
+  	<jsp-property-group>
+  		<url-pattern>/welcome</url-pattern>
+  		<include-prelude>prelude.jsps</include-prelude>
+  		<include-coda>coda.jspf</include-coda>
+  	</jsp-property-group>
+  </jsp-config>
 </web-app>

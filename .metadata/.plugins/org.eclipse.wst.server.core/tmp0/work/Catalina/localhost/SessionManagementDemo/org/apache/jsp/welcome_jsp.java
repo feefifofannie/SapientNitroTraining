@@ -58,8 +58,9 @@ public final class welcome_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>Insert title here</title>\r\n");
       out.write("</head>\r\n");
       out.write("<body>\r\n");
+      out.write("<!--  <a href=\"transact\">Inbox</a> -->\r\n");
       out.write("<a href=\"");
-      out.print( response.encodeURL("transact?action=inb") );
+      out.print(response.encodeURL("transact?action=inb"));
       out.write("\">Inbox</a>\r\n");
       out.write("</body>\r\n");
       out.write("</html>");
